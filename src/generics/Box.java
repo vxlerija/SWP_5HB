@@ -1,0 +1,20 @@
+package generics;
+
+public class Box<T> {
+	private T value;
+
+	public Box(T value) {
+		super();
+		this.value = value;
+	}
+	
+	public T getValue() {
+		return value;
+	}
+	
+	public void set(T value) {
+		this.value = value;
+	}
+	
+	
+}
