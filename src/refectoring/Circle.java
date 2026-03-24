@@ -9,7 +9,7 @@ public class Circle extends Geometry {
 	protected Circle(double radius, boolean filled, String color) {
 		super(filled, color);
 		if (radius < 0) {
-			throw new IllegalArgumentException ("Radius less than zero not allowed!"); //Exception setzten ist sauberer als eine einfache Ausgabe
+			throw new IllegalArgumentException ("Value less than zero not allowed!"); //Exception setzten ist sauberer als eine einfache Ausgabe
 		}
 
 		this.radius = radius;
