@@ -1,6 +1,5 @@
 package refectoring;
 
-import java.util.UUID;
 
 public class Circle extends Geometry {
 
