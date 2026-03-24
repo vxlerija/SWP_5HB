@@ -7,9 +7,11 @@ public class DrawIt {
 		Geometry unfilledBlueRect = new Rectangle(2, 9, false, "blue");
 		Geometry filledGreyCircle = new Circle(3, true, "grey");
 		Geometry unfilledRedCircle = new Circle(4, false, "red");
+		Geometry filledBlueSquare = new Square(5, true, "blue");
 
 		GeometryCollection<Geometry> construction = new GeometryCollection<Geometry>();
 
+		construction.add(filledBlueSquare);
 		construction.add(filledGreyRect);
 		construction.add(unfilledBlueRect);
 		construction.add(filledGreyCircle);
