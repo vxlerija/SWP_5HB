@@ -11,16 +11,16 @@ public class GeometryCollection<T extends Geometry> {
 		container = new ArrayList<T>();
 	}
 
-	public void add(T t) {
-		container.add(t);
+	public void add(T geometry) {
+		container.add(geometry);
 	}
 
-	public void remove(T t) {
-		container.remove(t);
+	public void remove(T geometry) {
+		container.remove(geometry);
 	}
 
-	public boolean contains(T t) {
-		return container.contains(t);
+	public boolean contains(T geometry) {
+		return container.contains(geometry);
 	}
 	
 	
@@ -28,9 +28,9 @@ public class GeometryCollection<T extends Geometry> {
 	
 	//UUID anstatt int
 	public T getById(UUID id) throws InvalidAccessException { 
-        for (T t : container) {
-            if (t.getId().equals(id)) {
-                return t; // direkt returnen, kein null-Element nötig
+        for (T geometry : container) {
+            if (geometry.getId().equals(id)) {
+                return geometry; 
             }
         }
         throw new InvalidAccessException("No such element.");
