@@ -1,9 +1,9 @@
 package refectoring;
 
-public class idException extends Exception{
+public class IDException extends Exception{
 	private static final long serialVersionUID = 1L;
 
-	public idException(String message) {
+	public IDException(String message) {
 		super(message);
 	}
 }

@@ -21,10 +21,10 @@ public class GeometryCollection<T extends Geometry> {
 	public boolean contains(T t) {
 		return container.contains(t);
 	}
-
-	public boolean containsGeometry(Geometry geom) {
-		return container.contains(geom);
-	}
+	
+	
+	//Codewiederholung gelöscht -> Contains
+	
 
 	public T getById(final int id) throws InvalidAccessException {
 		T element = null;
